@@ -6,5 +6,7 @@ module R5000Model
       :recoverable, :rememberable, :trackable, :validatable
 
     enum role: { admin: 0, normal: 1 }
+
+    has_many :articles
   end
 end
